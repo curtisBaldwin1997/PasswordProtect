@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="fv017739.PasswordProtect.MainSignActivity">
+
+    <!-- logo Image -->
+    <ImageView
+        android:id="@+id/id_logo_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="78dp"
+        android:src="@drawable/passwordlogo"
+        tools:ignore="HardcodedText" />
+
+
+    <!-- SignIn and SignUp Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:ignore="HardcodedText"
+        android:layout_marginLeft="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="44dp"
+        android:orientation="vertical">
+
+        <fonts.cairoButton
+            android:id="@+id/id_signIn_Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_52"
+            android:background="@drawable/ic_sign_background"
+            android:text="@string/signin"
+            tools:ignore="HardcodedText"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_18"/>
+
+        <fonts.cairoButton
+            android:id="@+id/id_signUp_Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_52"
+            android:layout_marginTop="@dimen/margin_11"
+            android:background="@drawable/ic_sign_background"
+            android:text="@string/signup"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText"
+            android:textSize="@dimen/textsize_18"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/infoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lowercaseContainer"
+
+        android:background="@color/backGround"
+        >
+
+
+
+        <fonts.cairoTextView
+            android:id="@+id/lowercase"
+            android:text="@string/lowerCase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchLowercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:theme="@style/SwitchOnOff"
+            android:checked="false"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/view_Spacer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lowercaseContainer"
+
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uppercaseContainer"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/view_Spacer"
+        android:background="@color/backGround">
+
+
+        <fonts.cairoTextView
+            android:id="@+id/uppercase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upperCase"
+            android:textColor="@color/black"
+
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchUppercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/uppercase"
+            android:theme="@style/SwitchOnOff"
+            android:checked="false"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/view_Spacer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uppercaseContainer"
+
+
+        />
+
+        <RelativeLayout
+            android:id="@+id/charactersContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/view_Spacer2"
+            android:background="@color/backGround"
+            >
+
+            <fonts.cairoTextView
+                android:id="@+id/characters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/characters"
+                android:textColor="@color/black"
+                />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchCharacters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/characters"
+                android:theme="@style/SwitchOnOff"
+                android:checked="false"
+                />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_Spacer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/charactersContainer"
+
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberContainer"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/view_Spacer3"
+        android:background="@color/backGround"
+        >
+
+        <fonts.cairoTextView
+            android:id="@+id/numbers"
+            android:text="@string/numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+
+            />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/numbers"
+            android:checked="false"
+            android:theme="@style/SwitchOnOff"
+
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backGround"
+   >
+    <fonts.cairoTextView
+        android:id="@+id/generatedPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass"
+        android:textColor="@color/black"
+
+    />
+    <fonts.cairoTextView
+        android:id="@+id/generatedPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:layout_below="@id/generatedPass"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsizeGen"
+        />
+</RelativeLayout>
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/password_length"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerInParent="true">
+
+
+    <fonts.cairoTextView
+        android:id="@+id/passwordLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/length"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_18"
+        android:paddingTop="30dp"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarContainer"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/password_length"
+
+        >
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:max="40"
+            android:theme="@style/SeekBar"
+            android:background="@color/backGround"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="180dp"
+
+                >
+
+                <fonts.cairoButton
+                    android:id="@+id/createPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_sign_background"
+                    android:minHeight="0dp"
+                    android:text="@string/createPassword"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_18"
+
+                    />
+            </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="100dp"
+       >
+
+        <fonts.cairoButton
+            android:id="@+id/copyPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sign_background"
+            android:minHeight="0dp"
+            android:text="@string/copyPassword"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_18"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/iconConatiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="30dp"
+        android:layout_centerInParent="true">
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src ="@drawable/ic_launcher_foreground_profile"
+
+
+        />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconConatiner"
+        android:layout_centerInParent="true">
+
+        <fonts.cairoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_20"
+            />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/profileContainer"
+    android:layout_alignParentBottom="true"
+    android:paddingBottom="30dp">
+
+
+    <RelativeLayout
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        >
+
+        <fonts.cairoTextView
+            android:id="@+id/ftitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:paddingLeft="55dp"
+            />
+        <fonts.cairoTextView
+            android:id="@+id/userName_Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:backgroundTint="#9E7BFF"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/ftitle"
+            android:paddingLeft="55dp"
+            />
+        <ImageView
+            android:id="@+id/profilefnameIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            app:srcCompat="@drawable/ic_profile"
+            android:paddingTop="15dp"
+            android:tint="#9E7BFF"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fname"
+        android:paddingBottom="20dp">
+
+        <fonts.cairoTextView
+            android:id="@+id/stitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:textColor="@color/black"
+            android:paddingLeft="55dp"
+            />
+        <fonts.cairoTextView
+            android:id="@+id/surName_Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#9E7BFF"
+            android:paddingLeft="55dp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/stitle"/>
+
+        <ImageView
+            android:id="@+id/profileSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            app:srcCompat="@drawable/ic_profile"
+            android:paddingTop="15dp"
+            android:tint="#9E7BFF"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sname"
+        android:paddingBottom="20dp">
+
+        <fonts.cairoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Bday"
+            android:textColor="@color/black"
+            android:id="@+id/btitle"
+            android:paddingLeft="55dp"
+            />
+        <fonts.cairoTextView
+            android:id="@+id/birthday_Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#9E7BFF"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/btitle"
+            android:paddingLeft="55dp"
+            />
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            app:srcCompat="@drawable/ic_callender"
+            android:tint="#9E7BFF"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bday"
+        android:paddingBottom="20dp">
+
+        <fonts.cairoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number"
+            android:textColor="@color/black"
+            android:id="@+id/mtitle"
+            android:paddingLeft="55dp"
+            />
+        <fonts.cairoTextView
+            android:id="@+id/mobile_Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#9E7BFF"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/mtitle"
+            android:paddingLeft="55dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            app:srcCompat="@drawable/ic_local_phone_black_24dp"
+            android:tint="#9E7BFF"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:paddingBottom="20dp">
+
+        <fonts.cairoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:id="@+id/etitle"
+            android:paddingLeft="55dp"
+            />
+        <fonts.cairoTextView
+            android:id="@+id/email_Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#9E7BFF"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/etitle"
+            android:paddingLeft="55dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            app:srcCompat="@drawable/ic_email"
+            android:tint="#9E7BFF"
+            android:textColorHint="@color/black"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

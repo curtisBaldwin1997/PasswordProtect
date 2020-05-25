@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fonts.cairoTextView
+        android:id="@+id/id_HomePageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_18"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ScrollView
+        android:id="@+id/ImageScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            >
+
+        <ImageView
+            android:id="@+id/imageViewEbay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ebay"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewChrome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/chrome"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/imageViewAmazon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/amazon"
+            android:layout_below="@id/imageViewEbay"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/facebook"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/imageViewChrome"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewGmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/gmail"
+            android:layout_below="@id/imageViewAmazon"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewReddit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/reddit"
+            android:layout_below="@id/imageViewGmail"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/twitter"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/imageViewFacebook"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewYoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/youtube"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/imageViewTwitter"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

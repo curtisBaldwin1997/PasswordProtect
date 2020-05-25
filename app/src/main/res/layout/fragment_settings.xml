@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="20dp">
+
+    <fonts.cairoTextView
+        android:id="@+id/id_HomePageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/margin_16"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_18"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/FingerAuth"
+        android:background="@color/backGround"
+        android:layout_alignParentTop="true"
+        >
+
+
+        <fonts.cairoTextView
+            android:id="@+id/title"
+            android:text="@string/Enable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fingerAuthContainer"
+        android:layout_centerInParent="true"
+
+        android:layout_below="@id/FingerAuth"
+        >
+
+        <fonts.cairoTextView
+            android:id="@+id/fingerprint"
+            android:text="@string/fingerPrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchFingerPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:theme="@style/SwitchOnOff"
+            android:checked="false"
+            />
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/logout"
+        android:background="@color/backGround"
+        android:paddingTop="15dp"
+       android:layout_above="@id/logOutContainer"
+        >
+
+
+        <fonts.cairoTextView
+            android:id="@+id/titleLogout"
+            android:text="@string/LogoutOFapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logOutContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="50dp"
+        >
+
+        <fonts.cairoButton
+            android:id="@+id/Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sign_background"
+            android:minHeight="0dp"
+            android:text="@string/logout"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_18"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/changePassContatiner"
+        android:background="@color/backGround"
+        android:layout_above="@id/ChangePasswordContainer"
+
+        >
+
+
+        <fonts.cairoTextView
+            android:id="@+id/titlePass"
+            android:text="@string/ChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ChangePasswordContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingTop="15dp">
+
+        <fonts.cairoButton
+            android:id="@+id/ChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sign_background"
+            android:minHeight="0dp"
+            android:text="@string/changePass"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_18"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

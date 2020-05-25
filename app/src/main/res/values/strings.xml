@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Password Protect</string>
+    <string name="number">Mobile Number</string>
+    <string name="email">Email Address</string>
+    <string name="password">Master Password</string>
+    <string name="Confirmpassword">Confirm Master Password</string>
+    <string name="sharedsecret">Shared Secret</string>
+    <string name="confirmsharedsecret">Confirm Shared Secret</string>
+    <string name="signup">Sign Up</string>
+    <string name="Continue">Continue</string>
+    <string name="forgot">forgot ?</string>
+    <string name="login">Login</string>
+    <string name="validemail">Enter a valid email address</string>
+    <string name="validpassword">Between 6 and 12 alphanumeric characters</string>
+    <string name="signin">Sign In</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="add">add</string>
+    <string name="notification">notification</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="home">Home</string>
+    <string name="vault">Vault</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="tool">Tools</string>
+    <string name="action_settings">Settings</string>
+    <string name="lowerCase">Lowercase letters</string>
+    <string name="upperCase">Uppercase letters</string>
+    <string name="numbers">Numbers</string>
+    <string name="characters">Characters</string>
+    <string name="createPassword">New Password</string>
+    <string name="minpass">8</string>
+    <string name="maxpass">40</string>
+    <string name="length">Length: %s</string>
+    <string name="copyPass">Copy</string>
+    <string name="newPass">Add Password</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="address">Web address</string>
+    <string name="note">Note</string>
+    <string name="title">Title</string>
+    <string name="generate">Generate</string>
+    <string name="send">Send</string>
+    <string name="forgotPass">Forgot Password?</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="changePass">Change Password</string>
+    <string name="Requirements">Password Requirments</string>
+    <string name="name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="copyUser">Copy Username</string>
+    <string name="dob">Birthday - 00/00/0000</string>
+    <string name="Bday">Birthday</string>
+    <string name="validMobile">Please enter a valid mobile number consisting of only numbers</string>
+    <string name="validBirthday">Please enter a valid birthday in this format 00/00/0000</string>
+    <string name="validSharedSecret">Please enter a valid shared secret</string>
+    <string name="enteryourfirstname">Enter your first name</string>
+    <string name="enteryourlastname">Enter your last name</string>
+    <string name="errorday">Please select your day of birthday</string>
+    <string name="errormonth">Please select your month of birthday</string>
+    <string name="erroryear">Please select your year of birthday</string>
+    <string name="strengthWeak">Weak</string>
+    <string name="strengthPoor">Poor</string>
+    <string name="strengthGood">Good</string>
+    <string name="strengthStrong">Strong</string>
+    <string name="fingerPrint">Use FingerPrint Authentication</string>
+    <string name="copyPassword">Copy Password</string>
+    <string name="verificationCode">Verifcation Code</string>
+    <string name="verfiyInfo">Please enter the verifcation code sent</string>.
+    <string name="bioFailed">Fingerprint not recognized</string>
+    <string name="logout">LogOut</string>
+    <string name="hint">Shared Secret Hint</string>
+    <string name="hintPage">Hint</string>
+    <string name="delete">Delete Password</string>
+    <string name="Enable"> Enable FingerPrint?</string>
+    <string name="LogoutOFapp">Would you like to logout?</string>
+    <string name="ChangePassword">Would you like to change your password??</string>
+    <string name="fingerAuth_title">Login</string>
+    <string name="fingerAuth_subtitle">Login to Password Protect</string>
+    <string name="fingerAuth_description">Place your finger on the device home button to login </string>
+    <string name="fingerAuth_button_cancel">Cancel</string>
+
+
+    <string name="fingerAuth_error_sdk_not_supported">Sdk version not supported</string>
+    <string name="fingerAuth_error_hardware_not_supported">Device does not support biometric authentication</string>
+    <string name="fingerAuth_error_fingerprint_not_available">Fingerprint is not registered in device</string>
+    <string name="fingerAuth_error_permission_not_granted">Permission is not granted by user</string>
+    <string name="fingerAuth_failure">Login not successful!</string>
+    <string name="fingerAuth_cancelled">Authentication cancelled by user</string>
+    <string name="fingerAuth_success">Login Successful</string>
+
+    <string name="AES">Data Secured Using AES Encryption</string>
+    <string name="MFA">Milti-Factor-Authenction Protection</string>
+    <string name="phone">Phone Verification To Ensure Its You</string>
+
+
+    <string name="web">Web Address</string>
+    <string name="password2">Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

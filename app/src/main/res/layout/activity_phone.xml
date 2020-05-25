@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background"
+    tools:context="fv017739.PasswordProtect.PhoneActivity">
+
+    <!-- logo Image -->
+    <ImageView
+        android:id="@+id/id_logo_Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="78dp"
+        android:src="@drawable/passwordlogo"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/TextViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_logo_Image"
+        tools:ignore="HardcodedText"
+        android:layout_centerVertical="true"
+
+       >
+
+
+        <fonts.cairoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verfiyInfo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_20"
+            android:layout_marginStart="25dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/phoneVerficationContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_46"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_edittext_background"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/TextViewContainer"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/padding_29"
+            android:paddingRight="@dimen/padding_17"
+            app:srcCompat="@drawable/ic_password"
+            android:tint="@android:color/black"/>
+
+        <fonts.cairoEditText
+            android:id="@+id/SmsCode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_46"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:hint="@string/verificationCode"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            android:paddingRight="30dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/signInContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="HardcodedText"
+        android:layout_marginLeft="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="44dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:layout_below="@+id/phoneVerficationContainer">
+
+
+
+
+    <fonts.cairoButton
+        android:id="@+id/id_SignIn_Button2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_52"
+        android:background="@drawable/ic_sign_background"
+        android:text="@string/signin"
+        tools:ignore="HardcodedText"
+        android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

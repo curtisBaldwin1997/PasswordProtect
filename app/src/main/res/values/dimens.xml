@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_78">78dp</dimen>
+    <dimen name="margin_73">73dp</dimen>
+    <dimen name="margin_37">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="height_46">46dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="padding_29">29dp</dimen>
+    <dimen name="padding_17">17dp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+
+    <dimen name="textsizeGen">26sp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="margin_38">38dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="textsize_10">10sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="margin_77">77dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_296">296dp</dimen>
+    <dimen name="margin_44">44dp</dimen>
+    <dimen name="margin_99">99dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_31">31dp</dimen>
+    <dimen name="height_52">52dp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

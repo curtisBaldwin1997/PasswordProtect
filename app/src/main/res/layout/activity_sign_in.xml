@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    >
+        <!-- back ImageView -->
+        <ImageView
+            android:id="@+id/id_back_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_31"
+
+            app:srcCompat="@drawable/ic_arrow_right" />
+
+        <!-- logo image -->
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_78"
+            android:layout_marginTop="@dimen/margin_73"
+            android:layout_marginRight="@dimen/margin_78"
+
+            android:src="@drawable/passwordlogo"/>
+
+        <!-- email and Password -->
+
+        <LinearLayout
+            android:id="@+id/id_content_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoImageView"
+            android:layout_marginLeft="@dimen/margin_37"
+            android:layout_marginTop="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_37"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_46"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/ic_edittext_background"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/padding_29"
+                    android:paddingRight="@dimen/padding_17"
+                    app:srcCompat="@drawable/ic_email"
+                    android:tint="@android:color/black"
+                    android:textColorHint="@color/black"/>
+
+                <fonts.cairoEditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_46"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_46"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/ic_edittext_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/padding_29"
+                    android:paddingRight="@dimen/padding_17"
+                    app:srcCompat="@drawable/ic_password"
+                    android:tint="@android:color/black"
+                    android:textColorHint="@color/black"
+                    />
+
+                <fonts.cairoEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_46"
+                    android:layout_gravity="center"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_46"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/ic_edittext_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/padding_29"
+                    android:paddingRight="@dimen/padding_17"
+                    app:srcCompat="@drawable/ic_password"
+                    android:textColorHint="@color/black"
+                    android:tint="@android:color/black"/>
+
+                <fonts.cairoEditText
+                    android:id="@+id/sharedSecretEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_46"
+                    android:layout_gravity="center"
+                    android:hint="@string/sharedsecret"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- forget password -->
+            <fonts.cairoTextView
+                android:id="@+id/id_forgetPassword_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="@string/hintPage"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+
+
+        </LinearLayout>
+
+    <fonts.cairoTextView
+        android:id="@+id/id_forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="420dp"
+        android:paddingLeft="40dp"
+        android:text="@string/forgotPass"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+        <!-- Sign In Button -->
+        <fonts.cairoButton
+            android:id="@+id/loginButton"
+            android:layout_width="93dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/id_content_LinearLayout"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_sign_background"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textSize="@dimen/textsize_18"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
